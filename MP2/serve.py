@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/', methods=['POST'])
 def stress_cpu():
     # Start stress_cpu.py as a subprocess
-    subprocess.Popen(["python", "stress_cpu.py"])
+    subprocess.Popen(["python3", "stress_cpu.py"])
     return jsonify(success=True, message="CPU stress started")
 
 # HTTP GET to return the private IP address
