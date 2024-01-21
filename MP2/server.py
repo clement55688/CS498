@@ -15,4 +15,4 @@ def update_seed():
     return jsonify(success=True, new_value=seed_value)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)  # Run the server on port 80
+    app.run(host='0.0.0.0', port=5000)
