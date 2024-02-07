@@ -5,14 +5,14 @@ import uuid
 url = "https://seorwrpmwh.execute-api.us-east-1.amazonaws.com/prod/mp3-lexv2-autograder"
 
 payload = {
-	"graphApi": #<post api for storing the graph>,
-	"botId": # <id of your Amazon Lex Bot>, 
-	"botAliasId": # <Lex alias id>,
-	"identityPoolId": #<cognito identity pool id for lex>,
-	"accountId": #<your aws account id used for accessing lex>,
-	"submitterEmail": # <insert your coursera account email>,
-	"secret": # <insert your secret token from coursera>,
-	"region": "us-east-1" #<Region where your lex is deployed (Ex: us-east-1)>
+	"graphApi": "https://3a3kptzaue.execute-api.us-east-1.amazonaws.com/mp3/graph",
+	"botId": "KDMSFJMFVZ",
+	"botAliasId": "TSTALIASID",
+	"identityPoolId": "us-east-1:23c8b308-11d4-4240-905d-dfa918b01589",
+	"accountId": "471112527243",
+	"submitterEmail": "cl154@illinois.edu",
+	"secret": "CvKsYEzdI9L8uMwQ",
+	"region": "us-east-1"
     }
 
 r = requests.post(url, data=json.dumps(payload))
